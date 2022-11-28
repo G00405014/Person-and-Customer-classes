@@ -1,27 +1,38 @@
-package ie.atu.week10b;
+package ie.atu.week10b
 
-public class customer extends Person_info{
-    private String CustomerNumber;
+public class Customer extends Person1{
+    private String customerNumber;
     private boolean mailingList;
 
+    public Customer(){
+    }
 
+    public Customer(String name,String number,String address,String customerNumber, boolean mailingList) {
+        super(name, address, number);
+        this.customerNumber = customerNumber;
+        this.mailingList = mailingList;
+    }
 
-    public customer() {
-        {
-             public Customer(String name, String Address, String Telephone, String CustomerNumber, boolean mailingList){
-            super(name, Address, Telephone);
-            this.CustomerNumber = customerNumber;
-            this.mailingList = mailingList;
-        }
+    public String getCustomerNumber() {
+        return customerNumber;
+    }
 
-            @Override
-            public String toString() {
-            return "Customer{" + super.toString() + "" +
-                    "CustomerNumber='" + CustomerNumber + '\'' +
-                    ", mailingList=" + mailingList +
-                    '}';
+    public void setCustomerNumber(String customerNumber) {
+        this.customerNumber = customerNumber;
+    }
 
+    public boolean isMailingList() {
+        return mailingList;
+    }
+
+    public void setMailingList(boolean mailingList) {
+        this.mailingList = mailingList;
+    }
+
+    @Override
+    public String toString() {
+        return   super.toString() + " " +
+                "customerNumber='" + customerNumber + '\'' +
+                ", mailingList=" + mailingList ;
     }
 }
-
-

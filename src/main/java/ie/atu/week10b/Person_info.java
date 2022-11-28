@@ -1,51 +1,47 @@
-package ie.atu.week10b;
-
-public class Person_info {
+package ie.atu.wekk10b
+public class Persontest {
     private String name;
-    private String Address;
-    private String Telephone;
+    private String address;
+    private String number;
 
-    public Person_info() {
+    public Person1(){
+
     }
-
-    public Person_info(String name, String Address, String Telephone) {
+    public Persontest(String name, String address, String number) {
         this.name = name;
-        this.Telephone = Telephone;
-        this.Address = Address;
+        this.address = address;
+        this.number = number;
     }
 
-    public String getName () {
+    public String getName() {
         return name;
     }
 
-    public void setName (String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getAddress () {
-        return Address;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAddress (String address){
-        this.Address = address;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getTelephone () {
-        return Telephone;
+    public String getNumber() {
+        return number;
     }
 
-    public void setTelephone (String telephone){
-        this.Telephone  = telephone;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     @Override
     public String toString() {
-        return "Person_info{" +
-                "name='" + name + '\'' +
-                ", Address='" + Address + '\'' +
-                ", Telephone='" + Telephone + '\'' +
-                '}';
+        return
+                " name='" + name + '\'' +
+                        ", address='" + address + '\'' +
+                        ", number='" + number + '\'' ;
     }
 }
-
-

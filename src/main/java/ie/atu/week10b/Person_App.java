@@ -1,15 +1,12 @@
-package ie.atu.week10b;
 
+package ie.atu.week10b
 
-public class Person_App
-{
+public class Person_App {
     public static void main(String[] args) {
-        Person_info dave = new Person_info();
-        dave.setName("dave");
-        dave.setAddress("mervue");
-        dave.setTelephone("1235");
 
-        System.out.println("dave.toString());
+        Person1 dave = new Person1();
+        Customer myCust = new Customer("dave","545454","mervue","4347874365",true);
+        System.out.println("details" + myCust.toString());
 
     }
 }
